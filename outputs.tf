@@ -1,3 +1,3 @@
 output "storage_account_name" {
-  value = azurerm_storage_account.cmbtstst.id
+  value = azurerm_storage_account.cmbtstst.name
 }

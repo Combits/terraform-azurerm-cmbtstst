@@ -13,7 +13,7 @@ resource "azurerm_storage_account" "cmbtstst" {
   resource_group_name           = var.resource_group_name
   name                          = var.storage_account_name
   location                      = azurerm_resource_group.rg.location
-  account_replication_type      = var.environment == "Production" ? "GRS" : "LRS"
+  account_replication_type      = var.environment == "Production" ? "ZRS" : "LRS"
   account_tier                  = "Standard"
   public_network_access_enabled = false
   tags                          = local.tags
