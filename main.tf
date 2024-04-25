@@ -6,7 +6,7 @@ locals {
   }
 }
 resource "azurerm_resource_group" "rg" {
-  name     = "Sandbox"
+  name     = "rg_terraform_sandbox"
   location = "westeurope"
 }
 resource "azurerm_storage_account" "cmbtstst" {
