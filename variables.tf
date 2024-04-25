@@ -5,7 +5,7 @@ variable "project" {
 }
 variable "owner" {
   type        = string
-  description = "Owner of resource"
+  description = "Owner of this resource"
 }
 variable "location" {
   type        = string
